@@ -1,0 +1,61 @@
+{
+  "name": "@alessio-libardi/website",
+  "description": "Alessio Libardi personal website.",
+  "version": "1.0.0",
+  "author": "Alessio Libardi",
+  "license": "MIT",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessio-libardi/website.git"
+  },
+  "keywords": [
+    "website",
+    "alpine",
+    "tailwind"
+  ],
+  "bugs": {
+    "url": "https://github.com/alessio-libardi/website/issues"
+  },
+  "homepage": "https://github.com/alessio-libardi/website#readme",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "release": "semantic-release",
+    "format": "npm run format:write",
+    "format:check": "prettier --check \"**/*.{css,md,html,js,json}\"",
+    "format:write": "prettier --write \"**/*.{css,md,html,js,json}\"",
+    "lint": "npm-run-all --parallel lint:scripts:write lint:styles:write",
+    "lint:check": "npm-run-all --parallel lint:scripts:check lint:styles:check",
+    "lint:scripts:check": "eslint \"src/**/*.js\"",
+    "lint:scripts:write": "eslint --fix \"src/**/*.js\"",
+    "lint:styles:check": "stylelint \"src/**/*.css\"",
+    "lint:styles:write": "stylelint --fix \"src/**/*.css\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.3",
+    "@semantic-release/release-notes-generator": "^9.0.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.3.2",
+    "prettier-config-standard": "^4.0.0",
+    "semantic-release": "^17.4.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "vite": "^2.4.3"
+  }
+}
