@@ -1,15 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>Alessio Libardi</title>
-    <script type="module" crossorigin src="/assets/index.eecc872a.js"></script>
-    <link rel="stylesheet" href="/assets/index.ccce2ca3.css">
+    <meta
+      name="description"
+      content="I'm a professional Web Designer & Developer based in Trento, Italy creating delightful web experiences since 2017."
+    />
+    <link rel="canonical" href="https://www.alessiolibardi.dev" />
+
+    
+    <script type="module" crossorigin src="/assets/index.4f365335.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.280176a4.js">
+    <link rel="stylesheet" href="/assets/index.94086758.css">
   </head>
-  <body>
-    <div id="app"></div>
+  <body
+    class="
+      antialiased
+      bg-gray-light
+      dark:bg-gray-dark
+      text-gray-dark
+      dark:text-gray-light
+    "
+  >
+    <main class="grid place-content-center h-screen w-screen p-4">
+      <header>
+        <h1 class="text-3xl leading-relaxed font-light">
+          Hi, I'm <em class="not-italic font-bold">Alessio</em>
+          <span class="animate-wave inline-block transform origin-bottom-right">
+            👋🏻
+          </span>
+        </h1>
+
+        <p class="text-xl font-light">
+          I'm a
+          <em class="not-italic font-bold">Web Designer & Developer</em> based
+          in
+          <em class="not-italic font-bold">Trento, Italy</em>
+        </p>
+      </header>
+
+      <p class="max-w-xl my-6 font-light">
+        I have been
+        <em class="not-italic font-bold"
+          >creating experiences on the web since 2018</em
+        >
+        helping people to realize their needs by
+        <em class="not-italic font-bold">combining my knowledge and passion</em>
+        with my desire for constant growth
+        <em class="not-italic font-bold">through a minimalist approach</em>,
+        believing in quality rather than quantity.
+      </p>
+
+      <footer>
+        <p class="font-light">
+          Feel free to
+          <a
+            class="
+              inline-block
+              px-1
+              underline
+              font-bold
+              dark:border-gray-light
+              hover:text-gray-light
+              dark:hover:text-gray-dark
+              hover:bg-gray-dark
+              dark:hover:bg-gray-light
+              transition
+            "
+            href="https://linkedin.com/in/alessio-libardi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >message me</a
+          >
+          or
+          <a
+            class="
+              inline-block
+              px-1
+              underline
+              font-bold
+              hover:text-gray-light
+              dark:hover:text-gray-dark
+              hover:bg-gray-dark
+              dark:hover:bg-gray-light
+              transition
+            "
+            href="https://github.com/alessio-libardi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >see my works</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <footer class="absolute bottom-4 inset-x-0 text-center">
+      <p
+        class="font-light"
+        x-data="activities"
+        x-on:load="init()"
+        x-html="getActivity(currentActivity)"
+      >
+        Made with ❤️ on Github
+      </p>
+    </footer>
+
     
   </body>
 </html>
