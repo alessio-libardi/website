@@ -3,6 +3,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   root: 'src',
+  publicDir: '../public',
   server: {
     open: true
   },
