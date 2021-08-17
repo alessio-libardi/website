@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/alessio-libardi/website#readme",
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "serve": "http-server dist",
+    "start": "npm run build && http-server dist -o",
+    "dev": "eleventy --watch & snowpack dev",
+    "build": "eleventy && snowpack build",
     "prepare": "husky install",
     "release": "semantic-release",
     "format": "npm run format:write",

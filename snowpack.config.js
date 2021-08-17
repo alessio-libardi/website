@@ -1,18 +1,9 @@
 module.exports = {
   mount: {
-    dist: { url: '/', static: true },
+    build: { url: '/', static: true },
     'src/public': { url: '/' }
   },
-  plugins: [
-    '@snowpack/plugin-postcss',
-    [
-      '@snowpack/plugin-run-script',
-      {
-        cmd: 'eleventy',
-        watch: '$1 --watch'
-      }
-    ]
-  ],
+  plugins: ['@snowpack/plugin-postcss'],
   buildOptions: {
     out: 'dist'
   },
