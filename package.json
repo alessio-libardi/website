@@ -40,10 +40,12 @@
     "@11ty/eleventy": "^0.12.1",
     "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "^3.2.2",
+    "faker": "^5.5.3",
     "http-server": "^0.12.3",
     "postcss": "^8.3.6",
     "snowpack": "^3.8.3",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.7",
+    "autoprefixer": "^10.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -54,7 +56,6 @@
     "@semantic-release/release-notes-generator": "^9.0.3",
     "@snowpack/plugin-postcss": "^1.4.3",
     "@snowpack/plugin-run-script": "^2.3.0",
-    "autoprefixer": "^10.3.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.31.0",
