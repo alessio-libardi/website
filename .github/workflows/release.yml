@@ -42,4 +42,5 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          HUSKY: 0
         run: npm run release
