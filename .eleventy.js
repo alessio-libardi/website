@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
       input: 'src',
       output: 'build'
     },
-    jsDataFileSuffix: '.data'
+    jsDataFileSuffix: '.data',
+    pathPrefix: '/website/'
   }
 }
